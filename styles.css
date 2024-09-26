@@ -1,0 +1,127 @@
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos uniformemente */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 10px 20px;
+}
+
+.logoheader img {
+    max-height: 60px; /* Tamaño del logo */
+}
+
+.lista {
+    flex: 1; /* Permite que la lista de navegación ocupe el espacio disponible */
+    display: flex;
+    justify-content: center; /* Centra los elementos de navegación */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flex para alinear los elementos en una fila */
+    gap: 20px; /* Espacio entre los elementos del menú */
+}
+
+nav ul li {
+    position: relative; /* Necesario para el submenú */
+}
+
+nav ul li a {
+    color: rgb(127, 121, 121);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3 ease;
+}
+
+nav ul li ul {
+    display: none; /* Mantiene el submenú oculto */
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    z-index: 1;
+}
+
+nav ul li:hover ul {
+    display: block; /* Muestra el submenú al pasar el mouse */
+}
+
+.donar {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.donar:hover {
+    background-color: #0056b3;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px; 
+}
+.social-icons img {
+    max-height: 30px; /
+}
+.right-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.partedos{
+    background-color: #116c86;
+    flex-direction: column;
+    align-items: center;
+    display:block;
+    justify-content: center;
+    text-align: center;
+}
+/*parte de imagenes 3 columnas*/
+.conima1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+.conjuntoi{
+    position: relative;
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+}
+.imap{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(98%);
+
+}
+.tituloim{
+    position: absolute;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.icono{
+    width: 60px;
+    height: auto;
+    margin-top: 20px;
+}
